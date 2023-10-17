@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>survey</title>
+        <style>
+            body{
+                background-color: blue;
+            }
+            h1{
+                color: white;
+                text-align: center;
+            }
+            div{
+                background-color: white;
+                text-align: center;
+                margin: auto;
+           width: 20%;
+           border: 3px solid white;
+           padding: 80px;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           background-color: white;
+            }
+            label{
+                display: block;
+                text-align: justify;
+                size: 10;
+            }
+            input[type=submit],input[type=reset]{
+                background-color: blue;
+                color: white;
+            }
+        </style>
+
+    </head>
+    <body>
+        <form action="/survey/submit" method="post">
+         <h1>Customer Survey Form</h1>
+         <div>
+            
+<label>First Name</label><input type="text" required ><br>
+<label>Last Name       </label>
+<input type="text" required ><br>
+<label>Date of Birth   </label>
+<input type="date" required ><br>
+<label>Email           </label> 
+<input type="text" required ><br>
+<label>Country         </label>
+<select name="Country" id="Country">
+                <option value="India">India</option>
+                <option value="America">America</option>
+                <option value="New zealand">New Zealand</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+                <option value="united States">United States</option>
+                <option value="UK">United Kingdom</option>
+            </select><br>
+<label>Gender</label>
+<input type="checkbox"  value="Male" >Male
+<input type="checkbox" value="Female" > Female<br>
+<label>Profession</label> 
+<input type="text" required><br>
+<label>Mobile Number</label>
+<input type="tel" required placeholder="9497072683"><br><br>
+<input type="submit" value="Submit" >  <input type="reset" value="Reset" >
+
+         </div>
+         </form>
+    </body>
+</html>
+    
